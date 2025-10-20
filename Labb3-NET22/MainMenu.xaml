@@ -1,0 +1,32 @@
+﻿<Window x:Class="Labb3_NET22.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Labb3_NET22"
+        mc:Ignorable="d"
+        Title="MainMenu"  Height="900" Width="700">
+    <Grid Background="Khaki">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Margin="5" Padding="5" >
+            <TextBlock x:Name="MainMenuBlock" Text="Main Menu" FontSize="70" HorizontalAlignment="Center" FontWeight="Bold"/>
+        </Border>
+        <Border Grid.Row="1" Margin="50" Padding="5">
+            <Button Content="Make new quiz" FontSize="50" FontWeight="Bold" />
+
+        </Border>
+        <Border Grid.Row="2" Margin="50" Padding="5">
+            <Button Content="Edit Existing quiz" FontSize="50" FontWeight="Bold" Background="Wheat"/>
+        </Border>
+        <Border Grid.Row="3" Padding="5" Margin="50">
+            <Button x:Name="PlayQuizButton" Content="Play Quiz" Grid.Row="3"  FontSize="50" FontWeight="Bold"/>
+        </Border>
+    </Grid>
+</Window>
