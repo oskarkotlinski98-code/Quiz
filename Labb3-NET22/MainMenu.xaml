@@ -19,14 +19,14 @@
             <TextBlock x:Name="MainMenuBlock" Text="Main Menu" FontSize="70" HorizontalAlignment="Center" FontWeight="Bold"/>
         </Border>
         <Border Grid.Row="1" Margin="50" Padding="5">
-            <Button Content="Make new quiz" FontSize="50" FontWeight="Bold" />
+            <Button Content="Make new quiz" FontSize="50" FontWeight="Bold" Click="NewQuizClick" />
 
         </Border>
         <Border Grid.Row="2" Margin="50" Padding="5">
-            <Button Content="Edit Existing quiz" FontSize="50" FontWeight="Bold" Background="Wheat"/>
+            <Button Content="Edit Existing quiz" FontSize="50" FontWeight="Bold" Background="Wheat" Click="EditQuizClick"/>
         </Border>
         <Border Grid.Row="3" Padding="5" Margin="50">
-            <Button x:Name="PlayQuizButton" Content="Play Quiz" Grid.Row="3"  FontSize="50" FontWeight="Bold"/>
+            <Button x:Name="PlayQuizButton" Content="Play Quiz" Grid.Row="3"  FontSize="50" FontWeight="Bold" Click="PlayQuizClick"/>
         </Border>
     </Grid>
 </Window>

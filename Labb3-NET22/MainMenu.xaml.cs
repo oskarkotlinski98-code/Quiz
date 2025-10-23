@@ -23,5 +23,24 @@ namespace Labb3_NET22
         {
             InitializeComponent();
         }
+
+        private void NewQuizClick(object sender, RoutedEventArgs e)
+        {
+            CreateQuizWindow newWindow = new CreateQuizWindow();
+            newWindow.Show();
+            this.Hide();
+
+            newWindow.Closed += (s, args) => this.Show();
+        }
+
+        private void EditQuizClick(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void PlayQuizClick(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
